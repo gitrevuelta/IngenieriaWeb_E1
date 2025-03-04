@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Página principal de la página web</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
-    
+    <div>
+        <h1>Formulario de contacto</h1>
+        <p>Rellena el siguiente formulario de contacto para más información</p>
+        <!-- Agrupamos en un "Fieldset para mayor comodidad visual"-->
+        <fieldset>
+            <!-- Enlazamos el titulo en el fieldset"-->
+            <legend>Datos del usuario</legend>
+            <form>
+                <!-- NOMBRE"-->
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" value="David"><br>
+
+                <!-- EMAIL"-->
+                <label for="email">E-mail .</label>
+                <input type="email" id="email" name="user_email">
+                <br>
+                <!-- CONSULTA SI HA ADQUIRIDO ANTES ALGÚN PRODUCTO"-->
+                 <p>¿Ha adquirido anteriormente algún artículo en nuestra empresa?</p>
+                <input type="radio" id="compra_anterior_si" name="compra_anterior" value="Si">
+                <label for="compra_anterior_si">Si</label>
+
+                <input type="radio" id="compra_anterior_no" name="compra_anterior" value="No">
+                <label for="compra_anterior_no">NO </label>
+                <br><br>
+        </fieldset>
+
+        <fieldset>
+
+            <label for="comentarios">Comentarios adicionales</label>
+            <br>
+            <textarea id="comentarios" name="areadetexto" rows="5" cols="30"></textarea>
+        </fieldset> <br>
+
+        <input type="checkbox" id="condiciones" name="casillaok" value="ok" checked>
+        <label for="condiciones">Acepto las condiciones</label>
+        <br><br>
+     
+        <!--Si queremos mas complejos para poder meter imagenes dentro, y mas cosas...-->
+        <button type="submit">ENVIAR</button>
+        </form>
+    </div>
+
 </body>
+
 </html>
