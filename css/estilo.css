@@ -4,11 +4,16 @@
 body {
     font-family: Verdana;
 }
+/*Definimos que todos los enlaces se coloreen en rojo y los elementos de tipo span tambien*/
+a:hover, span:hover {
+    color: #ff0000;
+    cursor: pointer;
 
-
-
-
-
+}
+/*Definimos que todos los enlaces no tengan ningún tipo de decoración en el texto*/
+a {
+    text-decoration: none;
+}
 
 
 
@@ -24,13 +29,13 @@ body {
 
 /*HEADER*/
 /**********************************************************/
+
 /*Aplicamos el color blanco a todo el header*/
 header {
     background-color: white;
 }
-
 /*Definimos el encabezado inicial que sea de tipo FLEXBOX*/
-.Encabezado_inicial {
+.encabezado_inicial {
     align-items: center;
     background-color: #071d58;
     display: flex;
@@ -39,13 +44,11 @@ header {
     width: 100%;
     justify-content: space-around;
 }
-
 /*Definimos las características del slogan de la página*/
 .eslogan {
     color: white;
     font-style: italic;
 }
-
 /*Definimos las características del contenedor de inicio sesion y registro*/
 .sesion {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -53,68 +56,54 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
-
+/*Queremos que al pasar el ratón para iniciar sesión se ponga de color rojo*/
+.sesion a:hover {
+background-color: white;
+color: red;
+}
 /*Definimos las características de los enlaces (items) de inicio sesion y registro*/
 .sesion a {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
     padding: 10px;
+    color: white;
 }
-
-
-.Encabezado_secundario {
+.encabezado_secundario {
     border-bottom: 1px solid black;
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 0.5em;
     align-items: center;
 }
-
 /*Definimos tamaño del logotipo únicamente del encabezado secundario*/
-.Encabezado_secundario img {
+.encabezado_secundario img {
     width: 130px;
     height: 110px;
 }
-
-.Encabezado_secundario ul {
+.encabezado_secundario ul {
     display: flex;
     justify-content: space-between;
     font-weight: 300;
     font-size: 1.2em;
     list-style-type: none;
 }
-
-.Encabezado_secundario li {
+.encabezado_secundario li {
     padding: 1em;
 }
-
-/*Como queremos que ambos elementos tengan la misma parametrización, las unimos*/
-.Encabezado_secundario a:hover, span:hover {
-    color:#ff0000;
-    cursor: pointer;
-}
-
-/*Quitamos el formato de serie de los enlaces para eliminar el subrayado inferior*/
-.Encabezado_secundario a {
-    text-decoration: none;
-}
-
-.idioma{
+.idioma {
     display: flex;
     justify-content: space-between;
 }
-
-.Encabezado_secundario span {
-
-  background-color:#071d58;
-  border: white;
-  height: 42px;
-  width: 42px;
-  line-height: 42px;
-  font-size: 1em;
-  text-align: center;
-  
+.encabezado_secundario span {
+    background-color: #071d58;
+    border: white;
+    margin: 5px;
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    font-size: 1em;
+    text-align: center;
+}
+/*Para una mejor estética, retiramos el margin derecho únicamente al span "ENG"*/
+#bloque_eng {
+    margin-right: 0;
 }

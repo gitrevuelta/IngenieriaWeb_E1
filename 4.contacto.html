@@ -1,43 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Página principal de la página web</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
-
 <body>
-
-
     <!-- Contenedor principal de la página web"-->
     <div class="Contenedor_principal">
 
         <!-- Cabecera de la página - común en todas las páginas-->
         <header>
-
-
-            <div class="Encabezado_inicial">
-
-
+            <div class="encabezado_inicial">
                 <!-- Contenedor donde ubicamos el slogan de la empresa-->
                 <div class="eslogan">
                     <h4>Soluciones Industriales, a la Medida de tu Éxito</h4>
                 </div>
-                <!-- Contenedor donde ubicamos las opciones de inicio de sesión
-                 indicamos con la # que el enlace no tiene aun una URL definida-->
+                <!-- Contenedor donde ubicamos las opciones de inicio de sesión indicamos con la # que el enlace no tiene aun una URL definida-->
                 <div class="sesion">
                     <a href="#">Iniciar sesión</a>
                     <a href="#">Registrarse</a>
                 </div>
-
             </div>
 
-            <div class="Encabezado_secundario">
-
+            <div class="encabezado_secundario">
                 <!-- Añadimos imagen de logotipo creado con inteligencia artificial-->
-                <img src="./images/LOGOTIPO_DE_LA_EMPRESA.jpg" alt="Logotipo Estrella" >
-
+                <img src="./images/LOGOTIPO_DE_LA_EMPRESA.jpg" alt="Logotipo Estrella">
                 <nav>
                     <ul>
                         <li><a href=".\1.inicio.html">INICIO</a></li>
@@ -46,18 +34,14 @@
                         <li><a href=".\4.contacto.html">CONTACTO</a></li>
                     </ul>
                 </nav>
-
                 <div class="idioma">
                     <span>ES</span>
                     <span>EUS</span>
-                    <span>ENG</span>
+                    <span id="bloque_eng">ENG</span>
                 </div>
-
             </div>
-
-
-
-        </header>
+    </div>
+    </header>
 
 
     <div>
@@ -77,7 +61,7 @@
                 <input type="email" id="email" name="user_email">
                 <br>
                 <!-- CONSULTA SI HA ADQUIRIDO ANTES ALGÚN PRODUCTO"-->
-                 <p>¿Ha adquirido anteriormente algún artículo en nuestra empresa?</p>
+                <p>¿Ha adquirido anteriormente algún artículo en nuestra empresa?</p>
                 <input type="radio" id="compra_anterior_si" name="compra_anterior" value="Si">
                 <label for="compra_anterior_si">Si</label>
 
@@ -96,12 +80,12 @@
         <input type="checkbox" id="condiciones" name="casillaok" value="ok" checked>
         <label for="condiciones">Acepto las condiciones</label>
         <br><br>
-     
+
         <!--Si queremos mas complejos para poder meter imagenes dentro, y mas cosas...-->
         <button type="submit">ENVIAR</button>
         </form>
     </div>
-
+    
 </body>
 
 </html>
