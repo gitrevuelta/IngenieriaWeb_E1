@@ -4,12 +4,15 @@
 body {
     font-family: Verdana;
 }
+
 /*Definimos que todos los enlaces se coloreen en rojo y los elementos de tipo span tambien*/
-a:hover, span:hover {
+a:hover,
+span:hover {
     color: #ff0000;
     cursor: pointer;
 
 }
+
 /*Definimos que todos los enlaces no tengan ningún tipo de decoración en el texto*/
 a {
     text-decoration: none;
@@ -27,13 +30,20 @@ a {
 
 
 
-/*HEADER*/
+/*HEADER PRINCIPAL*/
 /**********************************************************/
+
+body {
+    max-width: 1400px;
+    margin: auto;
+}
+
 
 /*Aplicamos el color blanco a todo el header*/
 header {
     background-color: white;
 }
+
 /*Definimos el encabezado inicial que sea de tipo FLEXBOX*/
 .encabezado_inicial {
     align-items: center;
@@ -44,11 +54,13 @@ header {
     width: 100%;
     justify-content: space-around;
 }
+
 /*Definimos las características del slogan de la página*/
 .eslogan {
     color: white;
     font-style: italic;
 }
+
 /*Definimos las características del contenedor de inicio sesion y registro*/
 .sesion {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -57,16 +69,19 @@ header {
     flex-direction: row;
     justify-content: space-around;
 }
+
 /*Queremos que al pasar el ratón para iniciar sesión se ponga de color rojo*/
 .sesion a:hover {
-background-color: white;
-color: red;
+    background-color: white;
+    color: red;
 }
+
 /*Definimos las características de los enlaces (items) de inicio sesion y registro*/
 .sesion a {
     padding: 10px;
     color: white;
 }
+
 .encabezado_secundario {
     border-bottom: 1px solid black;
     color: white;
@@ -74,11 +89,13 @@ color: red;
     justify-content: space-between;
     align-items: center;
 }
+
 /*Definimos tamaño del logotipo únicamente del encabezado secundario*/
 .encabezado_secundario img {
     width: 130px;
     height: 110px;
 }
+
 .encabezado_secundario ul {
     display: flex;
     justify-content: space-between;
@@ -86,13 +103,16 @@ color: red;
     font-size: 1.2em;
     list-style-type: none;
 }
+
 .encabezado_secundario li {
     padding: 1em;
 }
+
 .idioma {
     display: flex;
     justify-content: space-between;
 }
+
 .encabezado_secundario span {
     background-color: #071d58;
     border: white;
@@ -103,7 +123,76 @@ color: red;
     font-size: 1em;
     text-align: center;
 }
+
 /*Para una mejor estética, retiramos el margin derecho únicamente al span "ENG"*/
 #bloque_eng {
     margin-right: 0;
 }
+
+
+/*MAIN*/
+/**********************************************************/
+
+.header_section_inicio {
+    display: flex;
+    flex-direction: column;
+}
+
+.Tipos_de_productos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Imagenes_tipos_productos {
+    display: flex;
+    justify-content: space-around;
+    width: 130px;
+    height: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+/**********************************************************/
+
+/*Estilos para el div donde esta la informacion de abajo del todo de la pagina*/
+.div-footer-abajo {
+    background-color: black;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+  
+  /*Tamaño del div donde esta la informacion de los derechos y los dos enlaces*/
+  .div-footer-p {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /*Estilos para la letra de la informacion de los derechos y de los dos enlaces*/
+  .div-footer-p p, .enlaces-footer-abajo a {
+    color: white;
+    font-size: 1.3rem;
+    align-items: center;
+  }
+  
+  /*Estilos para el div donde estan los dos enlaces*/
+  .enlaces-footer-abajo {
+    display: flex;
+    align-items: center;
+  }
+  .enlaces-footer-abajo :hover {
+    color: #ff0000;
+  }
+ 
+ 
