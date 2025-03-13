@@ -5,7 +5,8 @@ body {
     font-family: Verdana;
 }
 
-/*Definimos que todos los enlaces se coloreen en rojo y los elementos de tipo span tambien*/
+/*Definimos que todos los enlaces se coloreen en rojo al pasar el ratón por encima
+además de los elementos de tipo span*/
 a:hover,
 span:hover {
     color: #ff0000;
@@ -18,7 +19,9 @@ a {
     text-decoration: none;
 }
 
-
+strong{
+    font-family: cursive;
+}
 
 
 
@@ -55,13 +58,13 @@ header {
     justify-content: space-around;
 }
 
-/*Definimos las características del slogan de la página*/
+/*Definimos las características concretas del slogan de la página*/
 .eslogan {
     color: white;
     font-style: italic;
 }
 
-/*Definimos las características del contenedor de inicio sesion y registro*/
+/*Definimos unas características al contenedor de inicio sesion y registro*/
 .sesion {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
@@ -70,18 +73,18 @@ header {
     justify-content: space-around;
 }
 
-/*Queremos que al pasar el ratón para iniciar sesión se ponga de color rojo*/
 .sesion a:hover {
     background-color: white;
     color: red;
 }
 
-/*Definimos las características de los enlaces (items) de inicio sesion y registro*/
 .sesion a {
     padding: 10px;
     color: white;
 }
 
+
+/*Características generales en el encabezado secundario*/
 .encabezado_secundario {
     border-bottom: 1px solid black;
     color: white;
@@ -90,8 +93,9 @@ header {
     align-items: center;
 }
 
-/*Definimos tamaño del logotipo únicamente del encabezado secundario*/
-.encabezado_secundario img {
+/*Definimos tamaño unicamente al logotipo, queremos que se mantenga siempre 
+definido a este tamaño sin importar del ajuste de la página*/
+#logotipo {
     width: 130px;
     height: 110px;
 }
@@ -100,7 +104,7 @@ header {
     display: flex;
     justify-content: space-between;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1.5em;
     list-style-type: none;
 }
 
@@ -133,28 +137,109 @@ header {
 /*MAIN*/
 /**********************************************************/
 
+/*SECCION PRINCIPAL*/
 .header_section_inicio {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
+/*Artículo 1*/
+#imagen_principal_main {
+    display: flex;
+    justify-content: center;
+}
+
+/*Artículo 2*/
+.articulo_2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.articulo_2 h1{
+  font-size:x-large
+
+}
+.articulo_2 p{
+    font-size:larger;
+  }
+
+/*Artículo 3*/
 .Tipos_de_productos {
-    display: flex;
-    justify-content: space-around;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; /* Espaciado interno */
 }
 
-.Imagenes_tipos_productos {
+.Tipos_de_productos div {
+    text-align: center;
+    background-color: #f8f8f8; 
+    padding: 15px; 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 10px rgba(105, 103, 103, 0.1); 
+    width: 30%; 
+    height: auto;
+}
+
+.Tipos_de_productos img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 30px; 
+}
+
+/*Artículo 4 y 5*/
+.porque_industrial_equipment {
     display: flex;
-    justify-content: space-around;
-    width: 130px;
-    height: 110px;
+    margin: 80px;
+    align-items: stretch;
+    justify-content: space-between;
+
+    width: 100%; 
+}
+
+.imagen_porque_nosotros img{
+    width: 100%; 
+    height: auto; 
+    border-radius: 30px; 
+    max-width: 500px;
+}
+.texto_porque_nosotros {
+
+    display: flex;
+    flex-direction: column;
+    background-color: lightskyblue;
+    color: black;
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+
+    text-align: justify;
 }
 
 
+/* Aplicamos esta propiedad para que se adapte mi página si la ventana es pequeña */
+@media (max-width: 1000px) {
+    /* En pantallas pequeñas, apilaremos los elementos */
+    .porque_industrial_equipment, .Tipos_de_productos{
+        flex-direction: column;
+        align-items: center; 
+    }
 
+    .Tipos_de_productos div {
+        width: 80%; /* Hacen que ocupen más espacio en móviles */
+        margin: 10px 0; /* Margen vertical */
+    }
 
-
-
+    /* Ocupan todo el ancho */
+    .imagen_porque_nosotros,
+    .texto_porque_nosotros {
+        max-width: 100%;
+        margin-bottom: 20px; 
+    }
+}
 
 
 
@@ -162,37 +247,22 @@ header {
 /*FOOTER*/
 /**********************************************************/
 
-/*Estilos para el div donde esta la informacion de abajo del todo de la pagina*/
-.div-footer-abajo {
+/* Barra final*/
+
+.footer_barra_final{
+    display: flex;
     background-color: black;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    margin-top: 2.5rem;
-  }
-  
-  /*Tamaño del div donde esta la informacion de los derechos y los dos enlaces*/
-  .div-footer-p {
-    width: 75%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  /*Estilos para la letra de la informacion de los derechos y de los dos enlaces*/
-  .div-footer-p p, .enlaces-footer-abajo a {
+    flex-direction: row;
     color: white;
-    font-size: 1.3rem;
+    justify-content: space-around;
     align-items: center;
-  }
-  
-  /*Estilos para el div donde estan los dos enlaces*/
-  .enlaces-footer-abajo {
-    display: flex;
-    align-items: center;
-  }
-  .enlaces-footer-abajo :hover {
-    color: #ff0000;
-  }
- 
- 
+}
+
+.footer_barra_final img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.footer_barra_final a{
+    color: white;
+}
