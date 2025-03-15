@@ -19,7 +19,8 @@ a {
     text-decoration: none;
 }
 
-strong{
+/*Definimos todos los elementos de tipo strong que sean en cursiva para sobresaltar mejor*/
+strong {
     font-family: cursive;
 }
 
@@ -35,18 +36,14 @@ strong{
 
 /*HEADER PRINCIPAL*/
 /**********************************************************/
-
 body {
-    max-width: 1400px;
+    max-width: 1700px;
     margin: auto;
 }
-
-
 /*Aplicamos el color blanco a todo el header*/
 header {
     background-color: white;
 }
-
 /*Definimos el encabezado inicial que sea de tipo FLEXBOX*/
 .encabezado_inicial {
     align-items: center;
@@ -57,13 +54,11 @@ header {
     width: 100%;
     justify-content: space-around;
 }
-
 /*Definimos las características concretas del slogan de la página*/
 .eslogan {
     color: white;
     font-style: italic;
 }
-
 /*Definimos unas características al contenedor de inicio sesion y registro*/
 .sesion {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -83,7 +78,6 @@ header {
     color: white;
 }
 
-
 /*Características generales en el encabezado secundario*/
 .encabezado_secundario {
     border-bottom: 1px solid black;
@@ -91,15 +85,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 0;
 }
-
 /*Definimos tamaño unicamente al logotipo, queremos que se mantenga siempre 
 definido a este tamaño sin importar del ajuste de la página*/
 #logotipo {
     width: 130px;
-    height: 110px;
+    height: 125px;
 }
-
 .encabezado_secundario ul {
     display: flex;
     justify-content: space-between;
@@ -127,14 +120,11 @@ definido a este tamaño sin importar del ajuste de la página*/
     font-size: 1em;
     text-align: center;
 }
-
 /*Para una mejor estética, retiramos el margin derecho únicamente al span "ENG"*/
 #bloque_eng {
     margin-right: 0;
 }
-
-
-/*MAIN*/
+/*MAIN INICIO*/
 /**********************************************************/
 
 /*SECCION PRINCIPAL*/
@@ -145,68 +135,76 @@ definido a este tamaño sin importar del ajuste de la página*/
 }
 
 /*Artículo 1*/
-#imagen_principal_main {
+.contenedor_imagen_inicio {
     display: flex;
     justify-content: center;
 }
 
+#imagen_principal_main {
+    height: auto;
+    width: 80vw;
+}
+
 /*Artículo 2*/
-.articulo_2{
+.articulo_2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.articulo_2 h1{
-  font-size:x-large
 
+.articulo_2 h1 {
+    font-size: x-large
 }
-.articulo_2 p{
-    font-size:larger;
-  }
+
+.articulo_2 p {
+    font-size: larger;
+}
 
 /*Artículo 3*/
 .Tipos_de_productos {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 20px; /* Espaciado interno */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* Espaciado interno */
 }
 
 .Tipos_de_productos div {
     text-align: center;
-    background-color: #f8f8f8; 
-    padding: 15px; 
-    border-radius: 10px; 
-    box-shadow: 2px 2px 10px rgba(105, 103, 103, 0.1); 
-    width: 30%; 
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(105, 103, 103, 0.1);
+    width: 30%;
     height: auto;
 }
 
 .Tipos_de_productos img {
-    width: 100%; 
-    height: auto; 
-    border-radius: 30px; 
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
 }
 
 /*Artículo 4 y 5*/
 .porque_industrial_equipment {
     display: flex;
-    margin: 80px;
-    align-items: stretch;
+    margin-top: 80px;
+    align-items: center;
     justify-content: space-between;
-
-    width: 100%; 
+    width: 100%;
 }
 
-.imagen_porque_nosotros img{
-    width: 100%; 
-    height: auto; 
-    border-radius: 30px; 
+.imagen_porque_nosotros img {
+    width: auto;
+    height: auto;
+    border-radius: 30px;
     max-width: 500px;
+    margin: 20px;
+    flex-grow: 1;
 }
-.texto_porque_nosotros {
 
+.texto_porque_nosotros {
     display: flex;
     flex-direction: column;
     background-color: lightskyblue;
@@ -215,54 +213,176 @@ definido a este tamaño sin importar del ajuste de la página*/
     padding: 20px;
     border-radius: 20px;
     border: 2px solid black;
-
+    margin: 20px;
     text-align: justify;
+    flex-grow: 1;
 }
-
 
 /* Aplicamos esta propiedad para que se adapte mi página si la ventana es pequeña */
 @media (max-width: 1000px) {
+
     /* En pantallas pequeñas, apilaremos los elementos */
-    .porque_industrial_equipment, .Tipos_de_productos{
+    .porque_industrial_equipment,
+    .Tipos_de_productos {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
 
     .Tipos_de_productos div {
-        width: 80%; /* Hacen que ocupen más espacio en móviles */
-        margin: 10px 0; /* Margen vertical */
+        width: 80%;
+        /* Ocupamos de esta manera más espacio en móviles */
+        margin: 10px 0;
+        /* Margen vertical */
     }
 
     /* Ocupan todo el ancho */
     .imagen_porque_nosotros,
     .texto_porque_nosotros {
         max-width: 100%;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
 }
 
+/*SECTION CONTACTO*/
+/**********************************************************/
+#texto_productos{
+    color: #071d58;
+    border-left: 4px solid #071d58;
+    background-color: hsl(180, 6%, 94%);
+    padding: 20px;
+    margin: 5px 15px;
+
+}
+.quienes_somos{
+    display: flex;
+    flex-direction: column;
+}
+
+.quienes_somos h1 {
+    background-color: #071d58;
+    color: white;
+    border-bottom: #071d58;
+}
+/*MAIN PRODUCTOS*/
+/**********************************************************/
+
+.main_productos{
+    display: flex;
+    flex-direction: column;
+}
+
+.div_productos{
+    display: flex;
+    flex-direction: row;
+}
+
+.indice_lado_izquierdo{
+    order: 1;
+}
+
+.estructura_productos_lado_derecho{
+    order: 2;
+}
+
+.nombre_precio h4{
+    margin-top: 0;
+    color: #071d58;
+    font-size: x-large;
+    margin-bottom: 0%;
+}
+
+.nombre_precio a{
+    margin-top: 0;
+    font-size:x-large
+}
+
+.seccion_de_productos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#tabla_de_características{
+
+}
+
+.producto_paginaweb{
+    background-color: hsl(180, 6%, 94%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 20px;
+    width: 450px;
+    height: 520px;
+}
+
+.producto_paginaweb img {
+    width: 290px;
+    height: 290px;
+    margin:25px;
+    box-shadow: 4px 7px 45px -10px rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
 
 
+.nombre_precio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*FOOTER*/
 /**********************************************************/
+/*Definimos la característica de la imagenes del logotipo - al no definir el tamaño fuente 
+base de CSS 1rem = 16px*/
+.logotipo_redes_sociales img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
 
-/* Barra final*/
+.logotipo_redes_sociales a :hover {
+    opacity: 0.5;
+}
 
-.footer_barra_final{
+.logotipo_redes_sociales {
+    display: flex;
+    background-color: darkgray;
+    justify-content: end;
+    align-items: center;
+}
+
+/* Footer Barra negra final*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.footer_barra_final {
     display: flex;
     background-color: black;
     flex-direction: row;
     color: white;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 250px 25px 25px;
 }
 
-.footer_barra_final img{
-    max-width: 50px;
-    max-height: 50px;
+.footer_barra_final img {
+    max-width: 60px;
+    max-height: 40px;
+    padding: 25px;
 }
 
-.footer_barra_final a{
+.footer_barra_final a {
     color: white;
+}
+
+@media (max-width: 1000px) {
+
+    /* En pantallas pequeñas, quitamos los enlaces inferiores*/
+    .footer_barra_final a {
+        display: none;
+    }
 }

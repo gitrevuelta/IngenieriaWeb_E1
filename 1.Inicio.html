@@ -9,8 +9,6 @@
 
 <body>
 
-
-
     <!-- Cabecera de la página - común en todas las páginas-->
     <header>
         <div class="encabezado_inicial">
@@ -43,8 +41,10 @@
                 <span id="bloque_eng">ENG</span>
             </div>
         </div>
-
     </header>
+    
+
+
 
     <!-- Contenido principal de la página de inicio-->
     <main>
@@ -57,8 +57,9 @@
                 </h2>
             </header>
             <!--Articulo 1-->
-            <article id="imagen_principal_main">
-                <img src="./images/IMAGEN_PRINCIPAL_INICIO.jpg" alt="Imagen principal inicio">
+            <article class="contenedor_imagen_inicio">
+                <img src="./images/IMAGEN_PRINCIPAL_INICIO.jpg" alt="Imagen principal inicio"
+                    id="imagen_principal_main">
             </article>
             <!--Artículo 2-->
             <article class="articulo_2">
@@ -93,8 +94,9 @@
             <article class="porque_industrial_equipment">
 
                 <div class="imagen_porque_nosotros">
-                    <img src="./images/PORQUE_NOSOTROS.JPG" alt="Imagen ¿porqué nosotros?">
+                    <img src="./images/IMAGEN_FONDO_INDUSTRIAL.avif" alt="Imagen ¿porqué nosotros?">
                 </div>
+
                 <div class="texto_porque_nosotros">
                     <h2>¿Porqué Industrial Equipment?</h2>
                     <p>En un mercado competitivo, sabemos que tiene múltiples opciones, pero en <strong>Industrial
@@ -140,39 +142,31 @@
 
         </section>
     </main>
-
-
-    <footer>
-
-        <div>
-
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
-
+    <footer class="footer">
+        <div class="logotipo_redes_sociales">
+            <h3>Siguenos en nuestras redes sociales</h3>
+            <a class="logotipo" href="https://www.facebook.com" target="_blank">
+                <img src="images/LOGOTIPO_FACEBOOK.png" alt="Logotipo de facebook">
+            </a>
+            <a class="logotipo" href="https://www.instagram.com" target="_blank">
+                <img src="images/LOGOTIPO_INSTAGRAM.png" alt="Logotipo de instagram">
+            </a>
+            <a class="logotipo" href="https://www.linkedin.com" target="_blank">
+                <img src="images/LOGOTIPO_LINKEDIN.png" alt="Logotipo de linkedin">
+            </a>
+            <a class="logotipo" href="https://www.x.com" target="_blank">
+                <img src="images/LOGOTIPO_TWITER.png" alt="Logotipo de twiter">
+            </a>
         </div>
 
         <div class="footer_barra_final">
-            <img src="./images/LOGOTIPO_DE_LA_EMPRESA.jpg" alt="Logotipo de la empresa" id="logotipo">
+            <img src="./images/LOGOTIPO_EMPRESA_SOLO_IMAGEN.jpg" alt="Logotipo de la empresa" id="logotipo">
             <p>© Industrial Equipment 2020 S.A Todos los derechos reservados.</p>
             <a href="#">Aviso legal</a>
             <a href="#">Condiciones de uso</a>
+            <a href="#">Configuración de cookies</a>
         </div>
-
-
-
     </footer>
-
-
-
 
 
 </body>

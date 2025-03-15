@@ -1,49 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Página sobre los productos de la página web</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
 
-    <!-- Contenedor principal de la página web"-->
-    <div class="Contenedor_principal">
+    <!-- Cabecera de la página - común en todas las páginas-->
+    <header>
+        <div class="encabezado_inicial">
+            <!-- Contenedor donde ubicamos el slogan de la empresa-->
+            <div class="eslogan">
+                <h4>Soluciones Industriales, a la Medida de tu Éxito</h4>
+            </div>
+            <!-- Contenedor donde ubicamos las opciones de inicio de sesión indicamos con la # que el enlace no tiene aun una URL definida-->
+            <div class="sesion">
+                <a href="#">Iniciar sesión</a>
+                <a href="#">Registrarse</a>
+            </div>
+        </div>
 
-        <!-- Cabecera de la página - común en todas las páginas-->
+        <div class="encabezado_secundario">
+            <!-- Añadimos imagen de logotipo creado con inteligencia artificial-->
+            <img src="./images/LOGOTIPO_DE_LA_EMPRESA.jpg" alt="Logotipo Estrella" id="logotipo">
+            <nav>
+                <ul>
+                    <li><a href=".\1.inicio.html">INICIO</a></li>
+                    <li><a href=".\2.productos.html">PRODUCTOS</a></li>
+                    <li><a href=".\3.noticias.html">NOTICIAS</a></li>
+                    <li><a href=".\4.contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="idioma">
+                <span>ES</span>
+                <span>EUS</span>
+                <span id="bloque_eng">ENG</span>
+            </div>
+        </div>
+    </header>
+    <main class="main_productos">
+
         <header>
-            <div class="encabezado_inicial">
-                <!-- Contenedor donde ubicamos el slogan de la empresa-->
-                <div class="eslogan">
-                    <h4>Soluciones Industriales, a la Medida de tu Éxito</h4>
-                </div>
-                <!-- Contenedor donde ubicamos las opciones de inicio de sesión indicamos con la # que el enlace no tiene aun una URL definida-->
-                <div class="sesion">
-                    <a href="#">Iniciar sesión</a>
-                    <a href="#">Registrarse</a>
-                </div>
-            </div>
-
-            <div class="encabezado_secundario">
-                <!-- Añadimos imagen de logotipo creado con inteligencia artificial-->
-                <img src="./images/LOGOTIPO_DE_LA_EMPRESA.jpg" alt="Logotipo Estrella" id="logotipo">
-                <nav>
-                    <ul>
-                        <li><a href=".\1.inicio.html">INICIO</a></li>
-                        <li><a href=".\2.productos.html">PRODUCTOS</a></li>
-                        <li><a href=".\3.noticias.html">NOTICIAS</a></li>
-                        <li><a href=".\4.contacto.html">CONTACTO</a></li>
-                    </ul>
-                </nav>
-                <div class="idioma">
-                    <span>ES</span>
-                    <span>EUS</span>
-                    <span id="bloque_eng">ENG</span>
-                </div>
-            </div>
+            <h1 id="texto_productos">Productos disponibles actualmente en la web</h1>
         </header>
-    </div>
 
-    
+        <div class="div_productos">
+
+            <aside class="indice_lado_izquierdo">
+                <h2>Indice de productos</h2>
+                <ol>
+                    <!--Indice a información de la página-->
+                    <li><a href="#electrónicos">Electrónicos</a></li>
+                    <ul>
+                        <li>Controladores</li>
+                        <li>Cableado</li>
+                        <li>Seguridad</li>
+                    </ul>
+                    <a href="#neumaticos">
+                        <li>Neumáticos</li>
+                    </a>
+                    <a href="#mecanicos">
+                        <li>Mecánicos</li>
+                    </a>
+                </ol>
+            </aside>
+            <article class="estructura_productos_lado_derecho">
+                <header>
+                    <h1>Productos electrónicos más vendidos</h1>
+                    <p>Entre los artículos más vendidos <br> Se encuentran los siguientes artículos</p>
+                </header>
+                <section class="seccion_de_productos">
+                    <div class="producto_paginaweb">
+                        <img src="images/IMAGEN_PRODUCTO_1.png" alt="Imagen_1">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Polimetro 3544-A</a>
+                            <h4>585,50€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table id="tabla_de_características">
+                                <h3>Características mas destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Alimentación externa</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>TRMS</td>
+                                    <td>560 gramos</td>
+                                    <td>No</td>
+                                    <td>2024</td>
+                                    <td>2024</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="producto_paginaweb">
+                        <img src="images/IMAGEN_PRODUCTO_2.jpg" alt="Imagen_1">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Polimetro 3544-A</a>
+                            <h4>585,50€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table>
+                                <h3>Características mas destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Alimentación externa</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>TRMS</td>
+                                    <td>560 gramos</td>
+                                    <td>No</td>
+                                    <td>2024</td>
+                                    <td>2024</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="producto_paginaweb">
+                        <img src="images/IMAGEN_PRODUCTO_3.webp" alt="Imagen_1">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Polimetro 3544-A</a>
+                            <h4>585,50€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table>
+                                <h3>Características mas destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Alimentación externa</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>TRMS</td>
+                                    <td>560 gramos</td>
+                                    <td>No</td>
+                                    <td>2024</td>
+                                    <td>2024</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="producto_paginaweb">
+
+                        <img src="images/IMAGEN_PRODUCTO_4.webp" alt="Imagen_1">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Polimetro 3544-A</a>
+                            <h4>585,50€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table>
+                                <h3>Características mas destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Alimentación externa</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>TRMS</td>
+                                    <td>560 gramos</td>
+                                    <td>No</td>
+                                    <td>2024</td>
+                                    <td>2024</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <header>
+                    <h1>Productos electrónicos con descuento</h1>
+                </header>
+
+                <section>
+
+                </section>
+
+                <header>
+                    <h1>últimas novedades</h1>
+                </header>
+
+                <section>
+
+                </section>
+
+            </article>
+        </div>
+    </main>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="logotipo_redes_sociales">
+            <h3>Siguenos en nuestras redes sociales</h3>
+            <a class="logotipo" href="https://www.facebook.com" target="_blank">
+                <img src="images/LOGOTIPO_FACEBOOK.png" alt="Logotipo de facebook">
+            </a>
+            <a class="logotipo" href="https://www.instagram.com" target="_blank">
+                <img src="images/LOGOTIPO_INSTAGRAM.png" alt="Logotipo de instagram">
+            </a>
+            <a class="logotipo" href="https://www.linkedin.com" target="_blank">
+                <img src="images/LOGOTIPO_LINKEDIN.png" alt="Logotipo de linkedin">
+            </a>
+            <a class="logotipo" href="https://www.x.com" target="_blank">
+                <img src="images/LOGOTIPO_TWITER.png" alt="Logotipo de twiter">
+            </a>
+        </div>
+        <div class="footer_barra_final">
+            <img src="./images/LOGOTIPO_EMPRESA_SOLO_IMAGEN.jpg" alt="Logotipo de la empresa" id="logotipo">
+            <p>© Industrial Equipment 2020 S.A Todos los derechos reservados.</p>
+            <a href="#">Aviso legal</a>
+            <a href="#">Condiciones de uso</a>
+            <a href="#">Configuración de cookies</a>
+        </div>
+    </footer>
+
 </body>
+
 </html>
