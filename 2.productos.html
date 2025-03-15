@@ -8,7 +8,6 @@
 </head>
 
 <body>
-
     <!-- Cabecera de la página - común en todas las páginas-->
     <header>
         <div class="encabezado_inicial">
@@ -42,7 +41,6 @@
         </div>
     </header>
     <main class="main_productos">
-
         <header>
             <h1 id="texto_productos">Productos disponibles actualmente en la web</h1>
         </header>
@@ -50,14 +48,14 @@
         <div class="div_productos">
 
             <aside class="indice_lado_izquierdo">
-                <h2>Indice de productos</h2>
+                <h2>Indice</h2>
                 <ol>
                     <!--Indice a información de la página-->
                     <li><a href="#electrónicos">Electrónicos</a></li>
                     <ul>
+                        <li>Elementos de medida</li>
                         <li>Controladores</li>
                         <li>Cableado</li>
-                        <li>Seguridad</li>
                     </ul>
                     <a href="#neumaticos">
                         <li>Neumáticos</li>
@@ -69,8 +67,8 @@
             </aside>
             <article class="estructura_productos_lado_derecho">
                 <header>
-                    <h1>Productos electrónicos más vendidos</h1>
-                    <p>Entre los artículos más vendidos <br> Se encuentran los siguientes artículos</p>
+                    <h1 id="electrónicos" class="titulo_productos">Productos Electrónicos</h1>
+                    <p>Entre los artículos más vendidos en el año 2025<br> Se encuentran los siguientes:</p>
                 </header>
                 <section class="seccion_de_productos">
                     <div class="producto_paginaweb">
@@ -80,8 +78,8 @@
                             <a href="#">Polimetro 3544-A</a>
                             <h4>585,50€</h4>
                             <!--Tabla de características de los artículos en venta-->
-                            <table id="tabla_de_características">
-                                <h3>Características mas destacadas</h3>
+                            <table>
+                                <h3>Características más destacadas</h3>
                                 <tr>
                                     <th><b>Marca</b></th>
                                     <th><b>Peso</b></th>
@@ -90,24 +88,24 @@
                                     <th><b>Datasheet</b></th>
                                 </tr>
                                 <tr>
-                                    <td>TRMS</td>
-                                    <td>560 gramos</td>
+                                    <td>LENZE</td>
+                                    <td>0,5kg</td>
                                     <td>No</td>
                                     <td>2024</td>
-                                    <td>2024</td>
+                                    <td> <a href="#">3544-A-Datasheet</a></td>
                                 </tr>
                             </table>
                         </div>
                     </div>
                     <div class="producto_paginaweb">
-                        <img src="images/IMAGEN_PRODUCTO_2.jpg" alt="Imagen_1">
+                        <img src="images/IMAGEN_PRODUCTO_2.jpg" alt="Imagen_2">
                         <!--Contenedores de los productos-->
                         <div class="nombre_precio">
-                            <a href="#">Polimetro 3544-A</a>
-                            <h4>585,50€</h4>
+                            <a href="#">Siemens PLC 1215-A</a>
+                            <h4>1066,99€</h4>
                             <!--Tabla de características de los artículos en venta-->
                             <table>
-                                <h3>Características mas destacadas</h3>
+                                <h3>Características más destacadas</h3>
                                 <tr>
                                     <th><b>Marca</b></th>
                                     <th><b>Peso</b></th>
@@ -116,55 +114,50 @@
                                     <th><b>Datasheet</b></th>
                                 </tr>
                                 <tr>
-                                    <td>TRMS</td>
-                                    <td>560 gramos</td>
-                                    <td>No</td>
-                                    <td>2024</td>
-                                    <td>2024</td>
+                                    <td>Siemens</td>
+                                    <td>1,2Kg</td>
+                                    <td>Si</td>
+                                    <td>2020</td>
+                                    <td> <a href="#">PLC-1215-Datasheet</a></td>
                                 </tr>
                             </table>
                         </div>
                     </div>
                     <div class="producto_paginaweb">
-                        <img src="images/IMAGEN_PRODUCTO_3.webp" alt="Imagen_1">
+                        <img src="images/IMAGEN_PRODUCTO_3.webp" alt="Imagen_3">
                         <!--Contenedores de los productos-->
                         <div class="nombre_precio">
-                            <a href="#">Polimetro 3544-A</a>
-                            <h4>585,50€</h4>
+                            <a href="#">Manguera Flexible 118469</a>
+                            <h4>127,35€</h4>
                             <!--Tabla de características de los artículos en venta-->
                             <table>
-                                <h3>Características mas destacadas</h3>
+                                <h3>Características más destacadas</h3>
                                 <tr>
                                     <th><b>Marca</b></th>
                                     <th><b>Peso</b></th>
-                                    <th><b>Alimentación externa</b></th>
+                                    <th><b>Longitud</b></th>
                                     <th><b>Año de fabricación</b></th>
                                     <th><b>Datasheet</b></th>
                                 </tr>
                                 <tr>
-                                    <td>TRMS</td>
-                                    <td>560 gramos</td>
-                                    <td>No</td>
-                                    <td>2024</td>
-                                    <td>2024</td>
+                                    <td>FFT</td>
+                                    <td>10kg</td>
+                                    <td>30m</td>
+                                    <td>2025</td>
+                                    <td> <a href="#">Mang-118469-Datasheet</a></td>
                                 </tr>
                             </table>
                         </div>
                     </div>
-
-
-
-
                     <div class="producto_paginaweb">
-
-                        <img src="images/IMAGEN_PRODUCTO_4.webp" alt="Imagen_1">
+                        <img src="images/IMAGEN_PRODUCTO_4.webp" alt="Imagen_4">
                         <!--Contenedores de los productos-->
                         <div class="nombre_precio">
-                            <a href="#">Polimetro 3544-A</a>
-                            <h4>585,50€</h4>
+                            <a href="#">Relé de seguridad B1</a>
+                            <h4>45,30€</h4>
                             <!--Tabla de características de los artículos en venta-->
                             <table>
-                                <h3>Características mas destacadas</h3>
+                                <h3>Características más destacadas</h3>
                                 <tr>
                                     <th><b>Marca</b></th>
                                     <th><b>Peso</b></th>
@@ -173,11 +166,63 @@
                                     <th><b>Datasheet</b></th>
                                 </tr>
                                 <tr>
-                                    <td>TRMS</td>
-                                    <td>560 gramos</td>
-                                    <td>No</td>
-                                    <td>2024</td>
-                                    <td>2024</td>
+                                    <td>Lenze</td>
+                                    <td>0,2kg</td>
+                                    <td>Si</td>
+                                    <td>2022</td>
+                                    <td> <a href="#">Relé-B1-Datasheet</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="producto_paginaweb">
+                        <img src="images/IMAGEN_PRODUCTO_5.png" alt="Imagen_5">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Escaner seguridad SICK</a>
+                            <h4>122,35€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table>
+                                <h3>Características más destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Alimentación externa</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>Sick</td>
+                                    <td>2,2kg</td>
+                                    <td>Si</td>
+                                    <td>2025</td>
+                                    <td> <a href="#">Escaner-Datasheet</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="producto_paginaweb">
+                        <img src="images/IMAGEN_PRODUCTO_6.jpg" alt="Imagen_6">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Fotocélula Omron</a>
+                            <h4>54,35€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table>
+                                <h3>Características más destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Alimentación externa</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>Omron</td>
+                                    <td>0,31kg</td>
+                                    <td>Si</td>
+                                    <td>2021</td>
+                                    <td> <a href="#">Omron-Datasheet</a></td>
                                 </tr>
                             </table>
                         </div>
@@ -185,30 +230,345 @@
                 </section>
 
                 <header>
-                    <h1>Productos electrónicos con descuento</h1>
+                    <h1 id="neumaticos" class="titulo_productos">Productos Neumáticos</h1>
+                    <p>Entre los artículos neumáticos fabricados en 2025<br> Estos fueron los más vendidos:</p>
                 </header>
+                <section class="seccion_de_productos">
+                    <div class="producto_paginaweb">
+                        <img src="images/IMAGEN_PRODUCTO_7.jpg" alt="Imagen_7">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Válvula Festo</a>
+                            <h4>256,99€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table>
+                                <h3>Características más destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Bar Maximo</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>Festo</td>
+                                    <td>2,30kg</td>
+                                    <td>16 bar</td>
+                                    <td>2023</td>
+                                    <td> <a href="#">Festo-Datasheet</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
 
-                <section>
+                    <div class="producto_paginaweb">
+                        <img src="images/IMAGEN_PRODUCTO_8.jpg" alt="Imagen_8">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Cilindro Festo XY</a>
+                            <h4>26,99€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table>
+                                <h3>Características más destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Bar Maximo</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>Festo</td>
+                                    <td>1,30kg</td>
+                                    <td>8 bar</td>
+                                    <td>2025</td>
+                                    <td> <a href="#">Festo-XY-Datasheet</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
 
+                    <div class="producto_paginaweb">
+                        <img src="images/IMAGEN_PRODUCTO_9.jpg" alt="Imagen_9">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Electrovalvula Festo</a>
+                            <h4>36,99€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table>
+                                <h3>Características más destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Bar Maximo</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>Festo</td>
+                                    <td>0,34kg</td>
+                                    <td>10 bar</td>
+                                    <td>2024</td>
+                                    <td> <a href="#">Fest.electrovalvula-Datasheet</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="producto_paginaweb">
+                        <img src="images/IMAGEN_PRODUCTO_10.jpg" alt="Imagen_10">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Cilindro Festo 15B</a>
+                            <h4>84,25€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table>
+                                <h3>Características más destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Bar Maximo</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>Festo</td>
+                                    <td>4,34kg</td>
+                                    <td>12 bar</td>
+                                    <td>2025</td>
+                                    <td> <a href="#">Cil.15B-Festo-Datasheet</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="producto_paginaweb">
+                        <img src="images/IMAGEN_PRODUCTO_11.jpg" alt="Imagen_11">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Cilindro FFT 23C</a>
+                            <h4>124,25€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table>
+                                <h3>Características más destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Bar Maximo</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>FFT</td>
+                                    <td>8,34kg</td>
+                                    <td>20 bar</td>
+                                    <td>2025</td>
+                                    <td> <a href="#">Cil.23C-FFT-Datasheet</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="producto_paginaweb">
+                        <img src="images/IMAGEN_PRODUCTO_12.jpg" alt="Imagen_12">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Válvula FFT</a>
+                            <h4>110,85€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table>
+                                <h3>Características más destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Bar Maximo</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>FFT</td>
+                                    <td>1,34kg</td>
+                                    <td>15 bar</td>
+                                    <td>2022</td>
+                                    <td> <a href="#">Valvula-FFT-Datasheet</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </section>
 
                 <header>
-                    <h1>últimas novedades</h1>
+                    <h1 id="mecanicos" class="titulo_productos">Productos Mecanicos</h1>
+                    <p>Los componentes mecánicos con mejor valoración<br> Son los siguientes!:</p>
                 </header>
 
-                <section>
+                <section class="seccion_de_productos">
 
+                    <div class="producto_paginaweb">
+                        <img src="images/IMAGEN_PRODUCTO_13.jpg" alt="Imagen_13">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Eje ref:897446</a>
+                            <h4>22,85€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table>
+                                <h3>Características más destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Medidas</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>RS</td>
+                                    <td>1,10kg</td>
+                                    <td>15x5</td>
+                                    <td>2025</td>
+                                    <td> <a href="#">897446-Datasheet</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="producto_paginaweb">
+                        <img src="images/IMAGEN_PRODUCTO_14.jpg" alt="Imagen_14">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Arandela ref:455798</a>
+                            <h4>1,85€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table>
+                                <h3>Características más destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>RS</td>
+                                    <td>0,09kg</td>
+                                    <td>2025</td>
+                                    <td> <a href="#">455798-Datasheet</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div class="producto_paginaweb">
+                        <img src="images/IMAGEN_PRODUCTO_15.jpg" alt="Imagen_15">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Acoplador ref:999639</a>
+                            <h4>5,20€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table>
+                                <h3>Características más destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Medidas</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>FFT</td>
+                                    <td>0,34kg</td>
+                                    <td>3x2</td>
+                                    <td>2025</td>
+                                    <td> <a href="#">999639-Datasheet</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="producto_paginaweb">
+                        <img src="images/IMAGEN_PRODUCTO_16.jpg" alt="Imagen_16">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Cinta ref:898754</a>
+                            <h4>11,90€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table>
+                                <h3>Características mas destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Longitud</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>RS</td>
+                                    <td>0,20kg</td>
+                                    <td>1m</td>
+                                    <td>2022</td>
+                                    <td> <a href="#">898754-Datasheet</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div class="producto_paginaweb">
+                        <img src="images/IMAGEN_PRODUCTO_17.jpg" alt="Imagen_17">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Eje ref:365563</a>
+                            <h4>66,65€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table>
+                                <h3>Características mas destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Medidas</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>RS</td>
+                                    <td>2,77kg</td>
+                                    <td>15x10x2</td>
+                                    <td>2016</td>
+                                    <td> <a href="#">365563-Datasheet</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div class="producto_paginaweb">
+                        <img src="images/IMAGEN_PRODUCTO_18.jpg" alt="Imagen_18">
+                        <!--Contenedores de los productos-->
+                        <div class="nombre_precio">
+                            <a href="#">Acoplador con muelle ref:748598</a>
+                            <h4>18,85€</h4>
+                            <!--Tabla de características de los artículos en venta-->
+                            <table>
+                                <h3>Características mas destacadas</h3>
+                                <tr>
+                                    <th><b>Marca</b></th>
+                                    <th><b>Peso</b></th>
+                                    <th><b>Año de fabricación</b></th>
+                                    <th><b>Datasheet</b></th>
+                                </tr>
+                                <tr>
+                                    <td>Lionel</td>
+                                    <td>0,64kg</td>
+                                    <td>2021</td>
+                                    <td> <a href="#">748598-Datasheet</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </section>
 
             </article>
         </div>
     </main>
-
-
-
-
-
-
     <footer class="footer">
         <div class="logotipo_redes_sociales">
             <h3>Siguenos en nuestras redes sociales</h3>
@@ -233,7 +593,6 @@
             <a href="#">Configuración de cookies</a>
         </div>
     </footer>
-
 </body>
 
 </html>
