@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Página para contacto de la página web</title>
+    <title>Página de contact</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
@@ -41,58 +41,100 @@
         </div>
     </header>
     <main>
-
-        <header>
-            <h1 id="texto_productos">Contacta con nosotros!</h1>
+        <header class="texto_header_comun">
+            <h1>Contacta con nosotros !!</h1>
         </header>
-
-        <div>
+        <section class="formulario_contacto">
             <h1>Formulario de contacto</h1>
-            <p>Rellena el siguiente formulario de contacto para más información</p>
+            <p>Rellena el siguiente formulario de contacto y nos pondremos en contacto contigo en 24h</p>
             <!-- Agrupamos en un "Fieldset para mayor comodidad visual"-->
             <fieldset>
                 <!-- Enlazamos el titulo en el fieldset"-->
                 <legend>Datos del usuario</legend>
                 <form>
-                    <!-- NOMBRE"-->
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" value="David"><br>
-
-                    <!-- EMAIL"-->
-                    <label for="email">E-mail .</label>
+                    <!-- NOMBRE-->
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"><br>
+                    <!-- EMAIL-->
+                    <label for="email">E-mail:</label>
                     <input type="email" id="email" name="user_email">
                     <br>
-                    <!-- CONSULTA SI HA ADQUIRIDO ANTES ALGÚN PRODUCTO"-->
-                    <p>¿Ha adquirido anteriormente algún artículo en nuestra empresa?</p>
+                    <!-- CONSULTA SI HA ADQUIRIDO ANTES ALGÚN PRODUCTO-->
+                    <p>¿Has adquirido anteriormente algún artículo en nuestra empresa?</p>
                     <input type="radio" id="compra_anterior_si" name="compra_anterior" value="Si">
                     <label for="compra_anterior_si">Si</label>
 
                     <input type="radio" id="compra_anterior_no" name="compra_anterior" value="No">
-                    <label for="compra_anterior_no">NO </label>
+                    <label for="compra_anterior_no">No </label>
                     <br><br>
+                </form>
             </fieldset>
             <fieldset>
-
-                <label for="comentarios">Comentarios adicionales</label>
+                <legend>Otros</legend>
+                <label for="comentarios">Comentarios adicionales </label>
                 <br>
                 <textarea id="comentarios" name="areadetexto" rows="5" cols="30"></textarea>
             </fieldset> <br>
-
             <input type="checkbox" id="condiciones" name="casillaok" value="ok" checked>
             <label for="condiciones">Acepto las condiciones</label>
             <br><br>
-
-            <!--Si queremos mas complejos para poder meter imagenes dentro, y mas cosas...-->
             <button type="submit">ENVIAR</button>
-            </form>
-        </div>
+        </section>
+        <section class="formulario_compra">
+            <h1>Formulario de compra</h1>
+            <p>¿Tienes problemas con una compra ya realizada? Por favor, utiliza este formulario</p>
+            <!-- Agrupamos en un "Fieldset para mayor comodidad visual"-->
+            <fieldset>
+                <!-- Enlazamos el titulo en el fieldset"-->
+                <legend>Usuario Registrado</legend>
+                <form>
+                    <!-- USUARIO-->
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario"><br>
+                    <!-- CONTRASEÑA-->
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña" name="contraseña"><br>
+                    <!-- ELECCION DE TIPO COMPRADO CON ANTERIORIDAD-->
+                    <p class="label_formulario">Selecciona el tipo de producto que has adquirido</p>
+                    <label for="tipo">Tipo de producto</label>
+                    <select id="tipo" name="tipo_producto">
+                        <option value="electronico">Electronico</option>
+                        <option value="neumatico">Neumatico</option>
+                        <option value="mecanico">Mecánico</option>
+                        <option value="varios">Variados en un mismo pedido</option>
+                    </select>
+                    <br><br>
+                    <label class="label_formulario" for="fecha">Selecciona la fecha y hora de la compra:</label>
+                    <br><br>
+                    <!--Entrada de tipo fecha importante porque me obliga a poner una fecha bien-->
+                    <input type="date" id="date" name="trip-start" value="dd / mm / aaaa">
+                    <input type="time" id="time" name="start"> <br>
+                    <br>
+                    <label for="referencia_pedido">Nº Referencia del pedido:</label>
+                    <input type="text" id="referencia_pedido" name="referencia"><br><br>
+                </form>
+            </fieldset>
+            <input type="checkbox" id="condiciones" name="casillaok" value="ok" checked>
+            <label for="condiciones">Acepto las condiciones</label>
+            <br><br>
+            <button type="submit">ENVIAR</button>
+        </section>
         <section>
             <div class="quienes_somos">
                 <h1>¿Quienes Somos?</h1>
                 <img src="./images/IMAGEN_QUIENES_SOMOS.webp" alt="Foto de la plantilla empresa">
+                <div>
+                <p>Somos es una empresa dedicada a la distribución de una amplia variedad de componentes
+                    para la industria, incluyendo soluciones electrónicas, mecánicas y neumáticas. Nos
+                    enfocamos en ofrecer productos de alta calidad que optimizan los procesos productivos
+                    de nuestros clientes, garantizando eficiencia y rendimiento. Con un equipo altamente
+                    capacitado y una fuerte orientación al crecimiento, buscamos expandir nuestra presencia
+                    en el mercado. </p> <br>
+                </div>
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="logotipo_redes_sociales">
             <h3>Siguenos en nuestras redes sociales</h3>
