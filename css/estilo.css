@@ -1,20 +1,19 @@
-/*Definimos los ajustes globales de nuestra aplicación web*/
-/**********************************************************/
+/*Ajustes globales de nuestra aplicación web*/
+/********************************************************************************************/
 body {
     font-family: Verdana;
     max-width: 1500px;
     margin: auto;
 }
 
-/*Definimos que todos los enlaces se coloreen en rojo al pasar el ratón por encima
-además de los elementos de tipo span*/
+/*Definimos que todos los enlaces y tipo span se coloreen en rojo al pasar el ratón por encima*/
 a:hover,
 span:hover {
     color: #ff0000;
     cursor: pointer;
 }
 
-/*Definimos que todos los enlaces no tengan ningún tipo de decoración en el texto*/
+/*Definimos que todos los enlaces no tengan ningún tipo de decoración en el texto por estética*/
 a {
     text-decoration: none;
 }
@@ -27,7 +26,6 @@ strong {
 /* Todos los botones del la página web tendran estas características*/
 button {
     background-color: #071d58;
-    ;
     color: white;
     padding: 10px 20px;
     margin-left: 20px;
@@ -37,14 +35,12 @@ button {
     cursor: pointer;
 }
 
-/*HEADER PRINCIPAL*/
-/**********************************************************/
-/*Aplicamos el color blanco a todo el header*/
+/*HEADER*/
+/********************************************************************************************/
 header {
     background-color: white;
 }
 
-/*Definimos el encabezado inicial que sea de tipo FLEXBOX*/
 .encabezado_inicial {
     align-items: center;
     background-color: #071d58;
@@ -55,13 +51,11 @@ header {
     justify-content: space-around;
 }
 
-/*Definimos las características concretas del slogan de la página*/
 .eslogan {
     color: white;
     font-style: italic;
 }
 
-/*Definimos unas características al contenedor de inicio sesion y registro*/
 .sesion {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
@@ -80,7 +74,8 @@ header {
     color: white;
 }
 
-/*Características generales en el encabezado secundario*/
+/*PAGINA INICIO*/
+/********************************************************************************************/
 .encabezado_secundario {
     border-bottom: 1px solid black;
     color: white;
@@ -125,14 +120,11 @@ definido a este tamaño sin importar del ajuste de la página*/
     text-align: center;
 }
 
-/*Para una mejor estética, retiramos el margin derecho únicamente al span "ENG"*/
 #bloque_eng {
     margin-right: 0;
 }
 
-/*MAIN INICIO*/
-/**********************************************************/
-/*SECCION PRINCIPAL*/
+/*MAIN*/
 
 .header_section_inicio {
     display: flex;
@@ -159,17 +151,13 @@ definido a este tamaño sin importar del ajuste de la página*/
     align-items: center;
 }
 
-
 .articulo_numero_2 h1 {
     font-size: x-large;
-
 }
 
 .articulo_numero_2 p {
     font-size: larger;
-
 }
-
 
 /*Artículo 3*/
 .tipos_de_productos {
@@ -226,30 +214,7 @@ definido a este tamaño sin importar del ajuste de la página*/
     flex-grow: 1;
 }
 
-
-
-/*SECTION DE CONTACTO*/
-/**********************************************************/
-.texto_header_comun {
-    color: #071d58;
-    border-left: 4px solid #071d58;
-    background-color: hsl(180, 6%, 94%);
-    padding: 20px;
-    margin: 20px 0px;
-}
-
-.quienes_somos {
-    display: flex;
-    flex-direction: column;
-}
-
-.quienes_somos h1 {
-    background-color: #071d58;
-    color: white;
-    border-bottom: #071d58;
-}
-
-/*MAIN PRODUCTOS*/
+/*PAGINA PRODUCTOS*/
 /**********************************************************/
 aside {
     position: sticky;
@@ -340,7 +305,6 @@ aside h2 {
 
 .nombre_precio table {
     width: 100%;
-    /* Unimos los bordes de las celdas para una mejor estética */
     border-collapse: collapse;
     text-align: center;
 }
@@ -361,8 +325,7 @@ aside h2 {
     font-size: 15px;
 }
 
-
-/*MAIN ULTIMAS NOTICIAS*/
+/*PAGINA NOTICIAS*/
 /**********************************************************/
 #imagen_corporativa {
     width: 100%;
@@ -407,8 +370,28 @@ aside h2 {
     height: 700px;
 }
 
-/*CSS - PÁGINA DE CONTACTO*/
+/*PÁGINA DE CONTACTO*/
 /**********************************************************/
+
+.texto_header_comun {
+    color: #071d58;
+    border-left: 4px solid #071d58;
+    background-color: hsl(180, 6%, 94%);
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+.quienes_somos {
+    display: flex;
+    flex-direction: column;
+}
+
+.quienes_somos h1 {
+    background-color: #071d58;
+    color: white;
+    border-bottom: #071d58;
+}
+
 .formularios {
     display: flex;
 }
@@ -500,13 +483,11 @@ base de CSS por defecto 1rem = 16px*/
 
 /*ADAPTACIÓN DE PANTALLA*/
 /********************************************************************************************/
-
 /* Aplicamos estas propiedades para que se adapte mi página si la ventana disminuye de 1000px
 (pensado para pantallas de portatil pequeñas) */
 @media (max-width: 1000px) {
 
-    .porque_industrial_equipment,
-    .Tipos_de_productos {
+    .porque_industrial_equipment {
         flex-direction: column;
         align-items: center;
     }
@@ -548,7 +529,6 @@ base de CSS por defecto 1rem = 16px*/
     .formularios {
         flex-direction: column;
     }
-
 }
 
 /* Aplicamos estas propiedades para que se adapte mi página si la ventana disminuye de 700px
@@ -598,11 +578,14 @@ base de CSS por defecto 1rem = 16px*/
         font-size: 30px;
     }
 
-    .pagina_principal_general h1, h2, h3, p{
+    .pagina_principal_general h1,
+    h2,
+    h3,
+    p {
         margin-left: 25px;
     }
 
-    .tipos_de_productos h1{
+    .tipos_de_productos h1 {
         font-size: 15px;
     }
 }
