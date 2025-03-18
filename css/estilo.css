@@ -2,7 +2,7 @@
 /**********************************************************/
 body {
     font-family: Verdana;
-    max-width: 1700px;
+    max-width: 1500px;
     margin: auto;
 }
 
@@ -129,6 +129,7 @@ definido a este tamaño sin importar del ajuste de la página*/
 #bloque_eng {
     margin-right: 0;
 }
+
 /*MAIN INICIO*/
 /**********************************************************/
 /*SECCION PRINCIPAL*/
@@ -183,7 +184,6 @@ definido a este tamaño sin importar del ajuste de la página*/
     background-color: #f8f8f8;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(105, 103, 103, 0.1);
     width: 30%;
     height: auto;
 }
@@ -266,6 +266,7 @@ aside ol {
 
 aside h2 {
     text-decoration: underline;
+    font-size: 19px;
 }
 
 .main_productos {
@@ -282,16 +283,13 @@ aside h2 {
     order: 1;
 }
 
-.titulo_productos {
+.titulo_productos,
+.estructura_productos_lado_derecho p {
     margin: 10px 10px 10px 20px;
 }
 
 .estructura_productos_lado_derecho {
     order: 2;
-}
-
-.estructura_productos_lado_derecho p {
-    margin: 10px 10px 10px 20px;
 }
 
 .nombre_precio h4 {
@@ -323,21 +321,15 @@ aside h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 15px 18px;
-    width: 440px;
+    margin: 12px 10px;
+    width: 400px;
 }
 
 .producto_paginaweb img {
-    width: 290px;
-    height: 290px;
-    margin: 25px;
-    box-shadow: 4px 7px 45px -10px rgba(0, 0, 0, 0.4);
+    width: 280px;
+    height: 280px;
+    margin: 20px;
     border-radius: 10px;
-}
-
-/* Aplicamos esta propiedad para evitar que el contenido se desborde */
-.producto_paginaweb {
-    overflow: hidden;
 }
 
 .nombre_precio {
@@ -404,40 +396,62 @@ aside h2 {
     background-color: #071d58;
     padding: 20px;
     margin-bottom: 0px;
-    width: 800px;
+    width: 700px;
     height: 80px;
-    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .panel_de_noticias img {
-    width: 840px;
-    height: 800px;
+    width: 740px;
+    height: 700px;
 }
 
-/*MAIN CONTACTO*/
+/*CSS - PÁGINA DE CONTACTO*/
 /**********************************************************/
+.formularios {
+    display: flex;
+}
+
 .formulario_contacto,
 .formulario_compra {
-    padding: 8px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.formulario_compra p,
+.formulario_contacto p {
+    margin-left: 5px;
+}
+
+.formulario_compra h1,
+.formulario_contacto h1 {
+    font-size: 22px;
 }
 
 .label_formulario {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
 }
 
-.quienes_somos h1,
-p {
-    margin-bottom: 0px;
-    font-size: x-large;
+.quienes_somos h1 {
+    margin: 0px;
+    font-size: 50px;
+    padding: 10px;
+}
 
+.quienes_somos p {
+    margin: 5px;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 0;
 
 }
 
 /*FOOTER*/
-/**********************************************************/
+/********************************************************************************************/
 /*Definimos la característica de la imagenes del logotipo - al no definir el tamaño fuente 
-base de CSS 1rem = 16px*/
+base de CSS por defecto 1rem = 16px*/
 .logotipo_redes_sociales img {
     width: 2.5rem;
     height: 2.5rem;
@@ -454,7 +468,6 @@ base de CSS 1rem = 16px*/
     align-items: center;
 }
 
-/* Footer Barra negra final*/
 .footer {
     display: flex;
     flex-direction: column;
@@ -468,7 +481,7 @@ base de CSS 1rem = 16px*/
     color: white;
     justify-content: space-between;
     align-items: center;
-    padding: 250px 25px 25px;
+    padding: 20px 25px 25px;
 }
 
 .footer_barra_final img {
@@ -480,60 +493,116 @@ base de CSS 1rem = 16px*/
 .footer_barra_final a {
     color: white;
 }
+
 .footer_barra_final p {
     font-size: 16px;
 }
+
 /*ADAPTACIÓN DE PANTALLA*/
-/**********************************************************/
-/* Aplicamos esta propiedad para que se adapte mi página si la ventana es pequeña */
+/********************************************************************************************/
+
+/* Aplicamos estas propiedades para que se adapte mi página si la ventana disminuye de 1000px
+(pensado para pantallas de portatil pequeñas) */
 @media (max-width: 1000px) {
-    /* En pantallas de menos de 1000px, apilaremos los elementos */
+
     .porque_industrial_equipment,
     .Tipos_de_productos {
         flex-direction: column;
         align-items: center;
     }
-    .Tipos_de_productos div {
-        width: 80%;
-        margin: 10px 0;
-    }
+
     .imagen_porque_nosotros,
     .texto_porque_nosotros {
         max-width: 100%;
         margin-bottom: 20px;
     }
-    /* En pantallas pequeñas, quitamos los enlaces inferiores
-    y los apartados de los idiomas al tener menos importancia*/
+
     .footer_barra_final a,
     .idioma,
     .eslogan,
     .indice_lado_izquierdo {
         display: none;
     }
+
     .encabezado_secundario li {
-        font-size: 90%;
+        padding: 10px;
     }
-    .panel_de_noticias header, img{
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-bottom: 60px;
+
+    #logotipo {
+        margin: 0px;
     }
+
+    .encabezado_secundario {
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    .sesion a {
+        font-size: 20px;
+    }
+
+    .logotipo_redes_sociales a {
+        height: 40px;
+    }
+
+    .formularios {
+        flex-direction: column;
+    }
+
 }
-@media (max-width: 700px) {
+
+/* Aplicamos estas propiedades para que se adapte mi página si la ventana disminuye de 700px
+(pensado para moviles o tabletas) */
+@media (max-width: 770px) {
     .nombre_precio table {
         font-size: 12px;
     }
+
     .producto_paginaweb {
         width: 100%;
         height: auto;
     }
+
     .nombre_precio th,
     .nombre_precio td {
         padding: 6px;
     }
+
     .encabezado_secundario {
         flex-direction: column;
         font-size: 12px;
+    }
+
+    .panel_de_noticias {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .panel_de_noticias div {
+        max-height: 400px;
+    }
+
+    .panel_de_noticias header {
+        font-size: large;
+        max-width: 485px;
+        padding: 5px;
+    }
+
+    .panel_de_noticias img {
+
+        max-height: 400px;
+        max-width: 495px;
+    }
+
+    .quienes_somos h1 {
+        font-size: 30px;
+    }
+
+    .pagina_principal_general h1, h2, h3, p{
+        margin-left: 25px;
+    }
+
+    .tipos_de_productos h1{
+        font-size: 15px;
     }
 }
